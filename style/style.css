@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "whisper";
+    src: url('../fonts/Whisper-Regular.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'sge';
+    src: url(../fonts/SpecialGothicExpandedOne-Regular.ttf);
+}
+
+
+:root {
+    --fonte-padrao: arial, helvetica, sans-serif;
+    --fonte-escrita: "whisper", sans-serif;
+    --fonte-titulo: "sge", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html body {
+    min-height: 100vh;
+    background-color: black;
+    background-image: url(../imagens/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding: 50px;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    font-weight: normal;
+}
+
+
+main {
+    font-family: var(--fonte-escrita);
+    font-size: 2.5em;
+}
+
+section {
+    padding: 10vh 0vh 10vh 10vh;
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.image {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    box-shadow: inset 0px 0px 20px 1px rgba(0, 0, 0, 0.603);
+    background-size: cover;
+}
+
+section.image > p {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.493), transparent);
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+}
